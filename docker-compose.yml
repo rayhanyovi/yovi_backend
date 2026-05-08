@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: imeeting-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-imeeting}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-imeeting_pass}
+      POSTGRES_DB: ${DB_NAME:-imeeting}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
