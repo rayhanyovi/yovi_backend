@@ -2,6 +2,14 @@
 
 Express.js API untuk aplikasi booking ruang meeting iMeeting.
 
+## Related Repository
+
+Backend ini dipakai oleh frontend iMeeting di repo:
+
+- `yovi_frontend`: https://github.com/rayhanyovi/yovi_frontend
+
+Jalankan backend ini terlebih dahulu, lalu ikuti README di repo frontend untuk menjalankan aplikasi Next.js. Frontend default akan memanggil API ini lewat `http://localhost:4000/api`.
+
 ## Prerequisites
 
 - Node.js 20+
@@ -20,6 +28,8 @@ npm run dev
 ```
 
 API berjalan di `http://localhost:4000`.
+
+Setelah API hidup, lanjutkan setup frontend di repo `yovi_frontend`.
 
 ## Environment
 
